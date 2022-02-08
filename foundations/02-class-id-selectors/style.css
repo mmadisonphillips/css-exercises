@@ -1,0 +1,21 @@
+html {
+    font-family: sans-serif;
+}
+
+.oneclass {
+    background-color: pink;
+}
+
+.cooler {
+    font-size: 32px;
+}
+
+#one {
+    color: blue;
+    font-size: 40px;
+}
+
+#two {
+    background-color: greenyellow;
+    font-size:32px;
+}
