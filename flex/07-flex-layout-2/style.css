@@ -5,24 +5,82 @@ body {
 }
 
 .header {
-  height: 72px;
+  flex: 0 0 auto;
   background: darkmagenta;
   color: white;
+  font-weight: 900;
+  font-size: 32px;
+  padding: 16px;
 }
 
 .footer {
+  flex: 0 0 72px;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .sidebar {
+  flex: 0 0 auto;
+  font-size: 24px;
   width: 300px;
+  padding: 16px;
   background: royalblue;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding:4px;
+}
+
 .card {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 300px;
+  height: auto;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.vert-container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.horiz-container{
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.card-container {
+  flex: 1 1 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  padding: 32px 0 32px 32px;
+  gap: 32px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
 }
